@@ -1,0 +1,246 @@
+.home_container {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+  overflow: hidden;
+}
+.home_left {
+  width: 70%;
+  display: flex;
+  padding-top: 3rem;
+  margin-top: 10rem;
+}
+.home_right {
+  width: 30%;
+  position: relative;
+  background-color: #3d7475;
+}
+.right_bg {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: -400px;
+  z-index: -1;
+}
+.home_main {
+  margin-left: 13rem;
+}
+.home_text2 {
+  font-size: 3.3rem;
+  font-weight: 800;
+  color: #2e266f;
+  width: 510px;
+  margin-top: 1rem;
+}
+.search_container {
+  background-color: #ffffff;
+  padding: 7px;
+  padding-left: 2rem;
+  width: 26rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search_input {
+  border: none;
+  outline: none;
+}
+.search_input::placeholder {
+  font-size: 1rem;
+}
+.go_btn {
+  background-color: #3d7475;
+  border: none;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.3rem;
+  padding-inline: 3.3rem;
+  padding-block: 0.8rem;
+  border-top-left-radius: 60px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.allbtn:hover {
+  background-color: #3d7475e0;
+  transform: scale(1.01);
+  transition: 0.1s ease-in-out;
+}
+.home_bottom {
+  position: absolute;
+  bottom: 3rem;
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.arrownavigate:hover {
+  transform: scale(1.03);
+  transition: 0.1s ease-in-out;
+}
+.location_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #3d7475;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding-inline: 2.3rem;
+  padding-block: 0.8rem;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.arrows_right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.arrows_right img {
+  width: 70px;
+}
+.location_icon_home {
+  width: 20px;
+}
+.lettuce {
+  z-index: 1;
+}
+.home_food {
+  z-index: 2;
+  margin-left: -55%;
+  width: 120%;
+  animation: rotateClockwise 60s linear infinite;
+}
+.home_food_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.lettuce_container {
+  position: absolute;
+  left: -40%;
+  top: -5%;
+}
+@keyframes rotateClockwise {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.dots_home {
+  position: absolute;
+  left: -3vw;
+  z-index: -1;
+  top: 22vh;
+  width: 55%;
+}
+.home_food_small {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .home_container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .home_text1 {
+    margin-top: 0rem;
+    width: 70%;
+  }
+  .home_food_small {
+    display: block;
+    width: 30%;
+    align-self: center;
+    margin-top: 11%;
+    animation: rotateClockwise 60s linear infinite;
+  }
+  .home_text1 {
+    font-size: 5rem;
+  }
+  .home_right {
+    display: none;
+  }
+  .home_left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(5%);
+    margin-top: 0rem;
+  }
+  .home_bottom {
+    position: absolute;
+    bottom: 9.5rem;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    width: 95%;
+    background-color: #3d7475;
+  }
+  .home_main {
+    margin-left: 3rem;
+  }
+  .home_text1 {
+    margin-left: 3rem;
+    width: 55%;
+    margin-top: -6rem;
+  }
+  .home_text2 {
+    font-size: 2rem;
+    width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .search_container {
+    width: 80%;
+  }
+  .search_input::placeholder {
+    font-size: 1rem;
+  }
+  .go_btn {
+    font-size: 1rem;
+  }
+  .location_btn {
+    font-size: 1rem;
+  }
+  .home_bottom {
+    transform: translateY(290%);
+  }
+  .lettuce {
+    position: absolute;
+    z-index: 1;
+    top: 9%;
+    left: -30%;
+    width: 120%;
+  }
+  .home_food {
+    position: absolute;
+    z-index: 2;
+    left: -46%;
+    top: 28%;
+    width: 140%;
+  }
+  .dots_home {
+    position: absolute;
+    left: -38%;
+    z-index: -1;
+    top: 30%;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home_food_small {
+    display: block;
+    width: 30%;
+    align-self: center;
+    margin-top: 25%;
+  }
+}

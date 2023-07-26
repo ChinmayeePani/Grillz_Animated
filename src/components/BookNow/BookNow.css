@@ -1,0 +1,183 @@
+.booknow_container {
+  width: 100vw;
+  min-height: 100vh;
+  margin-top: 10rem;
+  overflow: hidden;
+}
+.booknow_top {
+  display: flex;
+  align-items: center;
+  margin-left: 12rem;
+}
+.top_left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 5rem;
+}
+.left_design {
+  height: 70px;
+  width: 1rem;
+  background-color: #3d7475;
+}
+.left_text_main {
+  font-size: 2.3rem;
+  font-weight: 800;
+  width: 450px;
+}
+.right_text {
+  color: #918d8d;
+  font-size: 1.2rem;
+  width: 540px;
+  line-height: 1.5rem;
+}
+.booknow_bottom {
+  display: flex;
+  margin-top: 5rem;
+  padding-left: 3rem;
+  margin-top: 150px;
+  align-items: center;
+  gap: 12rem;
+}
+.booknow_items {
+  display: flex;
+  position: relative;
+}
+.booknow_items_card {
+  width: 450px;
+  height: 470px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 2.5rem;
+  transition: 0.1s ease-in-out;
+}
+.booknow_items_card:hover {
+  transform: scale(1.02);
+  transition: 0.1s ease-in-out;
+}
+.card_details {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  background-color: #3d7475ad;
+  width: 100%;
+  padding-inline: 2rem;
+  padding-bottom: 0.5rem;
+}
+.card_head {
+  font-weight: 800;
+  font-size: 2.1rem;
+  margin-top: 1.35rem;
+}
+.card_sub {
+  font-size: 0.8rem;
+  margin-top: -1.7rem;
+}
+.details_bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+}
+.book_now_button {
+  background-color: #ffffff;
+  border: none;
+  border-bottom-right-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding-inline: 1.3rem;
+  padding-block: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.book_now_button:hover {
+  background-color: #dad7d7;
+  transform: scale(1.01);
+  transition: 0.1s ease-in-out;
+}
+.see_more {
+  font-size: 1.2rem;
+  color: #2a5353;
+}
+.itemsnextarrow {
+  width: 70px;
+  animation: scaleUpDown 2s infinite;
+}
+@keyframes scaleUpDown {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.location_icon {
+  width: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .booknow_container {
+    height: auto;
+    margin-top: 2rem;
+  }
+  .booknow_top {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .top_left {
+    margin-right: 2rem;
+  }
+  .left_text_main {
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .right_text {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .booknow_bottom {
+    flex-direction: column;
+    padding-left: 0.5rem;
+    margin-top: 5rem;
+  }
+  .booknow_items_card {
+    width: 80%;
+    min-height: 200px;
+  }
+  .card_head {
+    font-size: 1.6rem;
+  }
+  .card_sub {
+    font-size: 0.7rem;
+  }
+  .book_now_button {
+    font-size: 0.8rem;
+  }
+  .see_more {
+    font-size: 1rem;
+  }
+  .itemsnextarrow {
+    width: 50px;
+  }
+  .book_bottom_small {
+    transform: translateY(-80%);
+  }
+  .booknow_items{
+    flex-direction: column;
+    gap:3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

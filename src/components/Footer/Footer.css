@@ -1,0 +1,135 @@
+.footer_container {
+  width: 100vw;
+  margin-block: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -15rem;
+  overflow: hidden;
+}
+.footer_main_note {
+  color: #2e266f;
+  font-size: 2rem;
+}
+.foot_sub_note {
+  font-size: 1rem;
+  color: #2e266fc0;
+  width: 800px;
+  text-align: center;
+  line-height: 2.5rem;
+}
+.next_line {
+  margin-top: -1.5rem;
+}
+.email_container {
+  background-color: #ffffff;
+  padding-left: 2rem;
+  width: 20rem;
+  height: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 666px;
+}
+.email_input {
+  border: none;
+  outline: none;
+}
+.email_input::placeholder {
+  font-size: 1rem;
+}
+.emailgo_img {
+  margin-top: 0.5rem;
+  width: 65px;
+  height: 65px;
+}
+.emailgo_img:hover {
+  transform: scale(1.02);
+  transition: 0.1s ease-in-out;
+}
+.page_links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.individual_links {
+  border: none;
+  background-color: #ffffff;
+  color: #2e266f;
+}
+.last_container {
+  display: flex;
+  align-items: center;
+}
+.footer_social {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  align-self: flex-end;
+  margin-bottom: 4rem;
+  transform: translateX(-10rem);
+}
+.copyright {
+  color: #333333;
+  font-size: 12px;
+  min-width: 150px;
+}
+.leaf {
+  transform: translateY(12%);
+}
+@media screen and (max-width: 1300px) {
+ .last_container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6.5rem;
+  }
+  .leaf{
+    width:50%;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .last_container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6.5rem;
+  }
+  .footer_container {
+    margin-left: -10rem;
+    margin-top: 8rem;
+    width: 90vw;
+  }
+  .footer_main_note {
+    font-size: 1.5rem;
+  }
+  .foot_sub_note {
+    font-size: 0.9rem;
+    width: 80%;
+  }
+  .next_line {
+    margin-top: -1rem;
+  }
+  .email_container {
+    width: 60%;
+  }
+  .page_links {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .footer_social {
+    transform: translateX(-80%);
+    align-items: center;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .leaf{
+    width:50%;
+  }
+}

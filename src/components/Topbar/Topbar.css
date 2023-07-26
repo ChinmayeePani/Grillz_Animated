@@ -1,0 +1,187 @@
+.topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5rem;
+  width: 100vw;
+  z-index: 1;
+}
+.submenu {
+  position: absolute;
+  background-color: #3d747538;
+  box-shadow: rgba(99, 99, 99, 0.829) 0px 2px 8px 0px;
+  padding: 0;
+  z-index: 1000;
+}
+.submenu_items {
+  font-size: 16px;
+  padding-block: 3px;
+  padding-inline: 15px;
+}
+.submenu_items:hover {
+  color: #ffffff;
+  background-color: #3d747579;
+  cursor: pointer;
+}
+.topbar_left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7rem;
+  margin-left: 13rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.nav_items {
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: #3f387b;
+  width: 100px;
+  padding-block: 1.5rem;
+  cursor: pointer;
+}
+.topbar_right {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-right: 7rem;
+}
+.avatar_with_badge {
+  position: relative;
+}
+.avatar_with_badge div {
+  width: 8px;
+  height: 8px;
+  background-color: #3fa2f7;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+.menu_avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.profile_select {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  gap: 10px;
+  color: #ffffff;
+}
+.mobile_control {
+  display: none;
+}
+.mobile_menu_wrapper {
+  display: none;
+}
+.mobie_menu_items_container{
+  display: none;
+}
+.mobie_menu_item{
+  display: none;
+}
+@media screen and (max-width: 1500px) {
+  .topbar_left {
+    margin-left: 3rem;
+    gap: 2rem;
+  }
+  .menu {
+    gap: 0.5rem;
+  }
+  .nav_items {
+    font-size: 0.8rem;
+  }
+  .profile_select {
+    font-size: 0.8rem;
+    color: #ffffff;
+  }
+  .topbar_right {
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .topbar {
+    gap: 3rem;
+  }
+  .topbar_left {
+    margin-left: 2rem;
+    gap: 2rem;
+  }
+  .menu {
+    gap: 0.5rem;
+  }
+  .nav_items {
+    font-size: 0.8rem;
+  }
+  .profile_select {
+    font-size: 0.8rem;
+    color: #3f387b;
+  }
+}
+@media screen and (max-width: 850px) {
+  .topbar {
+    gap: 1.5rem;
+  }
+  .topbar_left {
+    margin-left: 2rem;
+    gap: 1rem;
+  }
+  .menu {
+    gap: 0.5rem;
+  }
+  .nav_items {
+    font-size: 0.8rem;
+  }
+  .profile_select {
+    font-size: 0.8rem;
+    color: #3f387b;
+  }
+  .topbar_right {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .mobile_control {
+    display: block;
+    margin-right: 3rem;
+    font-size: 30px;
+    margin-top: -1.5rem;
+  }
+  .mobile_menu_wrapper {
+    display: block;
+    position: absolute;
+    width:100%;
+    top:7rem;
+  }
+  .mobie_menu_items_container{
+    display: flex;
+    flex-direction: column ;
+    border:1px solid #b5b5b5;
+    background-color: #ffffff;
+  }
+  .mobie_menu_item{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    padding-block: 5px;
+    border-bottom:1px solid #b5b5b5,
+
+  }
+  .mobie_menu_item:hover{
+    background-color: #b5b5b599;
+    
+  }
+}
